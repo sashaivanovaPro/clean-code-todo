@@ -29,11 +29,7 @@ const createTaskItem = function (taskText) {
   deleteIcon.src = "./remove.svg";
   deleteButton.appendChild(deleteIcon);
 
-  listItem.appendChild(checkbox);
-  listItem.appendChild(label);
-  listItem.appendChild(editInput);
-  listItem.appendChild(editButton);
-  listItem.appendChild(deleteButton);
+  listItem.append(checkbox, label, editInput, editButton, deleteButton);
   return listItem;
 };
 
